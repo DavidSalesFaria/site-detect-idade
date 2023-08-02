@@ -1,0 +1,30 @@
+body{
+    background: rgb(78, 147, 226);
+    font: normal 15pt Arial;
+}   
+header{
+    color: white;
+    text-align: center;  /*Alinhamento de texto: centro*/
+    font-size: 13pt;
+}
+section{
+    background: white;
+    border-radius: 10px;  /*Arredondamento das bordas*/
+    padding: 15px;  /*Espaçamento interno*/
+    max-width: 400px; /*Precisei usar max-width no lugar de width (largura)*/
+    margin: auto;  /*Espaçamento externo*/
+    /*desloc. lateral desloc. vertical espalhamento cor*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.726); /*sombra*/
+}
+footer{
+    color: white;
+    text-align: center;  /*Alinhamento de texto: centro*/
+    font: italic;  /*Fonte italico*/
+    font-size: 7pt;
+}
+
+
+img{
+    border-radius: 50%;
+}
+
