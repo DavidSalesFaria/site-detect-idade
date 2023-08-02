@@ -1,7 +1,7 @@
 function verificar(){
     // Obter data atual
     data = new Date()
-    // Extrair ano da tada
+    // Extrair ano da dada
     ano_atual = data.getFullYear()
 
     // Obter valor do campo 'Ano Nascimento'
@@ -17,6 +17,10 @@ function verificar(){
     if (form_ano.value.length == 0 || form_ano.value > ano_atual){
         window.alert('[ERRO]: Insira um valor válido!')
     }
+    // Verifica o ano de nascimento é menor do que 0
+    else if (Number(form_ano.value) < 0){
+        window.alert('[ERRO]: Insira um valor válido!')
+    }
     else{
         // Calcular idade
         idade = ano_atual - Number(form_ano.value)
@@ -25,7 +29,7 @@ function verificar(){
         sexo = ""
         tipo = ""
         
-        // Cria uma tag img no cocumento e insere id="foto"
+        // Cria uma tag img no cocumento e determina que id="foto"
         img = window.document.createElement("img")
         img.setAttribute("id", "foto")
         
@@ -38,7 +42,7 @@ function verificar(){
         }
 
         // Verifica o intervalo da idade
-        if (idade >=0 && idade < 15){
+        if (idade >= 0 && idade < 15){
             tipo = "crianca"
         }
         else if (idade >= 15 && idade < 18){
@@ -50,7 +54,7 @@ function verificar(){
         else if (idade >= 30 && idade < 49){
             tipo = "adulto"
         }
-        else if (idade >=50 && idade < 59){
+        else if (idade >= 50 && idade < 59){
             tipo = "maduro"
         }
         else{
