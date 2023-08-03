@@ -4,8 +4,7 @@ body{
 }   
 header{
     color: white;
-    text-align: center;  /*Alinhamento de texto: centro*/
-    font-size: 13pt;
+    text-align: center;
 }
 section{
     background: white;
@@ -22,8 +21,6 @@ footer{
     font: italic;  /*Fonte italico*/
     font-size: 7pt;
 }
-
-
 img{
     border-radius: 50%;
 }
